@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\DownloadsController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CourseController;
+use App\Http\Controllers\CourseViewController;
+use App\Http\Controllers\DownloadsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,17 +20,12 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/logins',function(){
-    return view('login');
-});
-Route::get('/dash',function(){
-        return view('mydash');
-});
-
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('mydashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 require __DIR__.'/auth.php';
 
-Route::get('/download', [DownloadsController::class,'getDownload']);
+Route::get('/download',[DownloadsController::class,'getDownload']);
+
+Route::get('/cours',[CourseController::class,'index']);

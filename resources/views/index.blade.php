@@ -341,7 +341,7 @@
                             Ce modèle vise à mobiliser divers acteurs(Gouvernement,partenaires techniques et financiers, société civile, secteur privé, diaspora burundaise, autres volontaires, etc.) pour développer des modèles qui peuvent servir de référence,
                             pour la mise à l’échelle des reformes nationales en matière d’éducation et de laformation des jeunes, particulièrement l’intégration du numériqueau sein du système scolaire.
                             </p>
-                            <a class="btn-solid-reg" href="{{ url('/download') }}">En savoir plus</a>
+                            <a class="btn-solid-reg" href="{{ url('/download') }}">Télécharger</a>
                             </div>
                         </li>
                     </ul>
