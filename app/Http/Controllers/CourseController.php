@@ -16,11 +16,8 @@ class CourseController extends Controller
     public function index()
     {
         $cours =  Cours::all();
-        return view('cours.list',[
-            'cours' => $cours
-        ]);
+        return view('cours.list',['cours' => $cours]);
     }
-
 
     /**
      * Store a newly created resource in storage.
@@ -28,9 +25,24 @@ class CourseController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+     public function add(){
+        return view('cours.add');
+     }
+
+     public function showAll(){
+        $cours =  Cours::all();
+        return view('admin.listCours',['cours' => $cours]);
+     }
+
     public function store(Request $request)
     {
-        Cours::create($request->all());
+        $cours = Cours::create($request->all());
+        if ($cours) {
+            return $this->showAll();
+        }else {
+            return $this->add();
+        }
     }
 
     /**
@@ -41,8 +53,14 @@ class CourseController extends Controller
      */
     public function show($id)
     {
-        return Cours::find($id);
+        $cours = Cours::find($id);
+        if ($cours) {
+            return response()->json(["status" => "success"]);
+        }else {
+            return response()->json(["status" => "failed"]);
+        }
     }
+
     public function update(Request $request, $id)
     {
        $cours = Cours::find($id);
@@ -52,10 +70,6 @@ class CourseController extends Controller
     }else{
         return response()->json(["status" => "error"]);
     }
-    }
-
-    public function showCourses(){
-        return view('cours.list');
     }
 
     /**

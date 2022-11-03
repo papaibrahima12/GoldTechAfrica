@@ -1,8 +1,8 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CourseController;
-use App\Http\Controllers\CourseViewController;
 use App\Http\Controllers\DownloadsController;
 
 /*
@@ -26,6 +26,25 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
+
+Route::middleware('auth','role:admin')->group(function(){
+    Route::get('/admin',function(){
+        return view('admin.dashboard_admin');
+    });
+});
+
 Route::get('/download',[DownloadsController::class,'getDownload']);
 
 Route::get('/cours',[CourseController::class,'index']);
+
+Route::get('/categories',[CategoryController::class,'index']);
+
+Route::get('/categorie/add',[CategoryController::class,'add']);
+
+Route::post('/categorie/add',[CategoryController::class,'store']);
+
+Route::post('/cours/add',[CourseController::class,'store']);
+
+Route::get('/cours/add',[CourseController::class,'add']);
+
+Route::get('/cours/all',[CourseController::class,'showAll']);

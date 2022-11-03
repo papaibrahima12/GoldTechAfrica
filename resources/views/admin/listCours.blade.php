@@ -1,12 +1,8 @@
-@extends('mydashboard')
+@extends('admin.dashboard_admin')
 
 @section('content')
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Mes Cours</h1>
-    <form id="logout-form" action="{{ route('logout') }}" method="POST">
-       @csrf
-       <input class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm" type="submit" value="Deconnexion"/>
-    </form>
+    <h1 class="h3 mb-0 text-gray-800">Les Cours</h1>
 </div>
 
     <div class="row">

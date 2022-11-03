@@ -33,21 +33,34 @@
         </a>
 
         <hr class="sidebar-divider my-0">
+        
         <li class="nav-item">
-            <a class="nav-link collapsed" href="{{ url('/categories') }}" >
-                <span>Accueil</span>
+            <a class="nav-link collapsed" href="{{ url('/categorie/add') }}" >
+                <span>Ajouter une categorie de cours</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="{{ url('') }}" >
-                <span>Tableau de bord</span>
+            <a class="nav-link collapsed" href="{{ url('/cours/add') }}" >
+                <span>Ajouter un cours</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="{{ url('/cours') }}" >
-                <span>Mes cours</span>
+            <a class="nav-link collapsed" href="{{ url('/cours/all') }}" >
+                <span>Liste des cours</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="{{ url('/veto/add') }}" >
+                <span>Ajouter un utilisateur</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="{{ url('/veto/showAll') }}" >
+                <span>Liste des utilisateurs</span>
             </a>
         </li>
         <!-- Divider -->
@@ -78,9 +91,9 @@
                 <!-- Topbar Search -->
                 <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                     <div class="input-group">
-                        <input type="text" id="seachvalue" class="form-control bg-light border-0 small" placeholder="Rechercher un cours..." aria-label="Search" aria-describedby="basic-addon2">
+                        <input type="text" id="seachvalue" class="form-control bg-light border-0 small" placeholder="Search anything..." aria-label="Search" aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                            <button class="btn btn-primary" type="button" id="seach">
+                            <button class="btn btn-warning" type="button" id="seach">
                                 <i class="fas fa-search fa-sm"></i>
                             </button>
                         </div>
@@ -116,7 +129,7 @@
                     <li class="nav-item dropdown">
                         <span class="mr-2 d-none d-lg-inline text-gray-600 small">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                <span class="caret">{{ Auth::user()->name }}</span>
+                                 <span class="caret">{{ Auth::user()->name }}</span>
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -142,17 +155,58 @@
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                {{-- <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <div class="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 class="h3 mb-0 text-gray-800">Tableau de bord</h1>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST">
                        @csrf
                        <input class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm" type="submit" value="Deconnexion"/>
                     </form>
-                </div> --}}
+                </div>
 
                 <!-- Content Row -->
                 <div class="row">
-                        
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-warning shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Nombre de livres</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                      <i class="fa fa-book" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-success shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Nombre d'utilisateurs</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                            {{-- @if(isset($nbusers))
+                                                {{ $nbveto }}
+                                            @endif --}}
+                                            2
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                      <i class="fa fa-user" aria-hidden="true"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 @yield('content')
@@ -171,7 +225,7 @@
         <footer class="sticky-footer bg-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; GoLD Tech Africa 2022</span>
+                    <span>Copyright &copy; SenFermeSN 2022</span>
                 </div>
             </div>
         </footer>
