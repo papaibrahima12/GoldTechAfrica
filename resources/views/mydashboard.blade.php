@@ -25,7 +25,7 @@
     <ul class="navbar-nav bg-gradient-warning sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url('/dashboard') }}">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url('/categories') }}">
             <div class="sidebar-brand-icon">
                 
             </div>
@@ -40,14 +40,14 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="{{ url('') }}" >
-                <span>Tableau de bord</span>
+            <a class="nav-link collapsed" href="{{ url('/cours') }}" >
+                <span>Mes cours</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="{{ url('/cours') }}" >
-                <span>Mes cours</span>
+            <a class="nav-link collapsed" href="{{ url('#') }}" >
+                <span>Mes informations</span>
             </a>
         </li>
         <!-- Divider -->
@@ -120,6 +120,8 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Profil</a>
+                               
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">

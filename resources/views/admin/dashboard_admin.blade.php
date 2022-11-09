@@ -18,13 +18,10 @@
 
 <body id="page-top">
 
-<!-- Page Wrapper -->
 <div id="wrapper">
 
-    <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-warning sidebar sidebar-dark accordion" id="accordionSidebar">
 
-        <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url('/dashboard') }}">
             <div class="sidebar-brand-icon">
                 
@@ -53,13 +50,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="{{ url('/veto/add') }}" >
-                <span>Ajouter un utilisateur</span>
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="{{ url('/veto/showAll') }}" >
+            <a class="nav-link collapsed" href="{{ url('/user/all') }}" >
                 <span>Liste des utilisateurs</span>
             </a>
         </li>
@@ -100,15 +91,12 @@
                     </div>
                 </form>
 
-                <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
 
-                    <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                     <li class="nav-item dropdown no-arrow d-sm-none">
                         <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-search fa-fw"></i>
                         </a>
-                        <!-- Dropdown - Messages -->
                         <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
                             <form class="form-inline mr-auto w-100 navbar-search">
                                 <div class="input-group">
@@ -123,8 +111,6 @@
                         </div>
                     </li>
                     <div class="topbar-divider d-none d-sm-block"></div>
-
-                    <!-- Nav Item - User Information -->
 
                     <li class="nav-item dropdown">
                         <span class="mr-2 d-none d-lg-inline text-gray-600 small">
@@ -149,7 +135,7 @@
                 </ul>
 
             </nav>
-            <!-- End of Topbar -->
+            
 
             <!-- Begin Page Content -->
             <div class="container-fluid">
@@ -166,7 +152,6 @@
                 <!-- Content Row -->
                 <div class="row">
 
-                    <!-- Earnings (Monthly) Card Example -->
                     <div class="col-xl-3 col-md-6 mb-4">
                         <div class="card border-left-warning shadow h-100 py-2">
                             <div class="card-body">
@@ -235,14 +220,11 @@
     <!-- End of Content Wrapper -->
 
 </div>
-<!-- End of Page Wrapper -->
 
-<!-- Scroll to Top Button-->
+
 <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
 </a>
-
-<!-- Logout Modal-->
 
 
 <!-- Bootstrap core JavaScript-->
@@ -254,13 +236,6 @@
 
 <!-- Custom scripts for all pages-->
 <script src="{{ asset('template/js/sb-admin-2.min.js') }}"></script>
-
-<!-- Page level plugins -->
-<script src="{{ asset('template/vendor/chart.js/Chart.min.js') }}"></script>
-
-<!-- Page level custom scripts -->
-<script src="{{ asset('template/js/demo/chart-area-demo.js') }}"></script>
-<script src="{{ asset('template/js/demo/chart-pie-demo.js') }}"></script>
 
 </body>
 

@@ -799,13 +799,13 @@
                         <a href="#your-link">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#your-link">
+                        {{-- <a href="#your-link">
                             <i class="fab fa-pinterest-p"></i>
-                        </a>
+                        </a> --}}
                         <a href="#your-link">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#your-link">
+                        <a href="https://www.linkedin.com/company/governance-and-local-development-technology/">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                         <a href="#your-link">

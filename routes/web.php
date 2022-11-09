@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DownloadsController;
 
 /*
@@ -48,3 +49,7 @@ Route::post('/cours/add',[CourseController::class,'store']);
 Route::get('/cours/add',[CourseController::class,'add']);
 
 Route::get('/cours/all',[CourseController::class,'showAll']);
+
+Route::get('/user/all',[UserController::class,'showAll']);
+
+Route::post('/user/delete/{id}',[UserController::class,'destroy']);
