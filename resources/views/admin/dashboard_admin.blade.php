@@ -22,7 +22,7 @@
 
     <ul class="navbar-nav bg-gradient-warning sidebar sidebar-dark accordion" id="accordionSidebar">
 
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url('/dashboard') }}">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url('/admin') }}">
             <div class="sidebar-brand-icon">
                 
             </div>
@@ -157,9 +157,9 @@
                             <div class="card-body">
                                 <div class="row no-gutters align-items-center">
                                     <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Nombre de livres</div>
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Nombre de Cours</div>
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                           
+                                            {{ $nbr = DB::table('cours')->count(); }}
                                         </div>
                                     </div>
                                     <div class="col-auto">
@@ -177,10 +177,7 @@
                                     <div class="col mr-2">
                                         <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Nombre d'utilisateurs</div>
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                            {{-- @if(isset($nbusers))
-                                                {{ $nbveto }}
-                                            @endif --}}
-                                            2
+                                            {{ $nbr = DB::table('users')->count(); }}
                                         </div>
                                     </div>
                                     <div class="col-auto">
@@ -210,7 +207,7 @@
         <footer class="sticky-footer bg-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; SenFermeSN 2022</span>
+                    <span>Copyright &copy; GoLD Tech Africa 2022</span>
                 </div>
             </div>
         </footer>

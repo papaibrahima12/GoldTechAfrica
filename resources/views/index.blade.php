@@ -7,57 +7,38 @@
     <meta name="description" content="Official website of Gold Tech Africa">
     <meta name="author" content="GoldTech">
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta property="og:type" content="article" />
 
-    <!-- Website Title -->
+
     <title>Gold Tech Africa</title>
     
-    <!-- Styles -->
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/fontawesome-all.css') }}" rel="stylesheet">
     <link href="{{ asset('css/swiper.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/magnific-popup.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/styles.css') }}" rel="stylesheet">
-	
-	<!-- Favicon  -->
     <link rel="icon" href="images/logogoldtech.png">
 </head>
+
 <body data-spy="scroll" data-target=".fixed-top">
     
-    <!-- Preloader -->
 	<div class="spinner-wrapper">
         <div class="spinner">
             <div class="bounce1"></div>
             <div class="bounce2"></div>
             <div class="bounce3"></div>
         </div>
-    </div>
-    <!-- end of preloader -->
-    
+    </div>    
 
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
 
-        <!-- Text Logo - Use this if you don't have a graphic logo -->
         <a class="navbar-brand logo-text page-scroll" href="{{ url('/') }}">Gold Tech Africa</a>
 
-        <!-- Image Logo -->
-        {{-- <a class="navbar-brand logo-image" href="{{ url('/') }}"><p class="text-orange">Gold Tech Africa</p></a>  --}}
-        
-        <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-awesome fas fa-bars"></span>
             <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
-        <!-- end of mobile menu toggle button -->
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
@@ -74,7 +55,6 @@
                     <a class="nav-link page-scroll" href="#projects">Nos Projets</a>
                 </li>
 
-                <!-- Dropdown Menu -->          
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Learning Center</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -82,10 +62,9 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{{ route('login') }}"><span class="item-text">Connexion</span></a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href=""><span class="item-text">Cours gratuits</span></a>
+                        <a class="dropdown-item" href="#"><span class="item-text">Cours gratuits</span></a>
                     </div>
                 </li>
-                <!-- end of dropdown menu -->
 
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#contact">Contact</a>
@@ -93,21 +72,20 @@
             </ul>
             <span class="nav-item social-icons">
                 <span class="fa-stack">
-                    <a href="#your-link">
+                    <a href="https://www.facebook.com/profile.php?id=100066730981526">
                         <i class="fas fa-circle fa-stack-2x"></i>
                         <i class="fab fa-facebook-f fa-stack-1x"></i>
                     </a>
                 </span>
                 <span class="fa-stack">
-                    <a href="#your-link">
+                    <a href="https://twitter.com/goldtechafrica2?s=11&t=oJCwbyEKXqWK3dgSsRFrCQ">
                         <i class="fas fa-circle fa-stack-2x"></i>
                         <i class="fab fa-twitter fa-stack-1x"></i>
                     </a>
                 </span>
             </span>
         </div>
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
+    </nav>
 
 
     <!-- Header -->
@@ -121,58 +99,51 @@
                         <p class="p-large">Gold Tech est une initiative qui fait dans la gouvernance locale et le développement. En associant ces derniers avec la technologie nous obtenons un terrain favorable à un avenir meilleur pour les populations africaines. </p>
                         <a class="btn-solid-lg page-scroll" href="#register">S'inscrire</a>
                         <a class="btn-outline-lg page-scroll" href="#instructor">Vision</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
+                    </div>
+                </div> 
+            </div> 
+        </div> 
         
-        <!-- Image Slider -->
+      
         <div class="outer-container">
             <div class="slider-container">
                 <div class="swiper-container image-slider-1">
                     <div class="swiper-wrapper">
-                        
-                        <!-- Slide -->
+                     
                         <div class="swiper-slide" >
                             <img class="img-fluid" src="images/gold1.jpg" alt="alternative">
                             <div class="carousel-caption d-none d-md-block">
                                 <p class="text-g1">Gouvernance Locale et développement de technologies</p>
                             </div>
                         </div>
-                        <!-- end of slide -->
+                     
 
-                        <!-- Slide -->
                         <div class="swiper-slide">
                             <img class="img-fluid" src="images/gold2.jpg" alt="alternative">
                             <div class="carousel-caption d-none d-md-block">
                                 <p class="text-g1">Solutions digitales et numériques</p>
                             </div>
                         </div>
-                        <!-- end of slide -->
+                      
 
-                        <!-- Slide -->
                         <div class="swiper-slide">
                             <img class="img-fluid" src="images/gold3.jpg" alt="alternative">
                             <div class="carousel-caption d-none d-md-block">
                                 <p class="text-g1">Apprentissages,Formations en présentiel et Applications</p>
                             </div>
                         </div>
-                        <!-- end of slide -->
 
-                    </div> <!-- end of swiper-wrapper -->
+                    </div> 
                     
-                    <!-- Add Arrows -->
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                    <!-- end of add arrows -->
-                    
-                </div> <!-- end of swiper-container -->
-            </div> <!-- end of slider-container -->
-        </div> <!-- end of outer-container -->
-        <!-- end of image slider -->
+                   
+                </div> 
+            </div>
+        </div>
+        
 
-    </header> <!-- end of header -->
-    <!-- end of header -->
+    </header>
 
 
     <!-- Registration -->
@@ -327,7 +298,7 @@
                         <li class="media">
                             <i class="bullet">1</i>
                             <div class="media-body">
-                                <h4>Développement d’un centre numérique pilote dansla paroisse de Kiganda
+                                <h4>Développement d’un centre numérique pilote dans la paroisse de Kiganda
                                     province du
                                     Muramvya, République du Burundi</h4>
                                 <p>Depuis l’année scolaire 2011-2012, le Gouvernement Burundais a pris l’option d’introduire les Technologies de l’Information et de la Communication pour l’Education (TICE) dans le système éducatif national.
@@ -359,17 +330,17 @@
                 <div class="col-lg-6">
                     <div class="text-container">
                         <h2>Nos Objectifs  </h2>
-                        <p>Soutenir l’émergence d’une génération entrepreneuriale et active dans le domaine des innovations et technologies numériques appliquées à, l’éducation, à la Gouvernance et au développement en Afrique sub-saharienne</p>
+                        <p>Soutenir l’émergence d’une génération entrepreneuriale et active dans le domaine des innovations et technologies numériques appliquées à l’éducation, à la Gouvernance et au développement en Afrique sub-saharienne</p>
                         <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox">En savoir plus</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <img class="img-fluid" src="images/cible.png" alt="alternative">
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-3 -->
-    <!-- end of students -->
+                </div> 
+            </div>
+        </div> 
+    </div> 
+    
 
 
     <!-- Details Lightbox -->
@@ -379,9 +350,9 @@
                 <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
                 <div class="col-lg-8">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/details-lightbox.jpg" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
+                        <img class="img-fluid" src="images/logogoldtech.png" alt="alternative" width="450px" height="450px">
+                    </div> 
+                </div> 
                 <div class="col-lg-4">
                     <h3>Les cours proposés</h3>
                     <hr>
@@ -401,16 +372,16 @@
                             <i class="fas fa-square"></i><div class="media-body">Formations spéciales(Agriculture,...)</div>
                         </li>
                     </ul>
-                    <a class="btn-solid-reg mfp-close page-scroll" href="#">S'inscrire</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">Retour</a>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of details lightbox -->
+                    {{-- <a class="btn-solid-reg mfp-close page-scroll" href="#">S'inscrire</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">Retour</a> --}}
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+
 
 
     <!-- Video -->
-    <div class="basic-4">
+    {{-- <div class="basic-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -433,17 +404,17 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of basic-4 -->
-    <!-- end of video -->
+    <!-- end of video --> --}}
 
 
-    <!-- Takeaways -->
+   
     <div class="cards">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h2>Stratégies</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
+                </div>
+            </div> 
             <div class="row">
                 <div class="col-lg-12">
 
@@ -457,9 +428,7 @@
                             <p>Nous modernisons le service public en offrant à tous les usagers et à leurs familles des services numériques pour apprendre ou accompagner la scolarité de leurs enfants</p>
                         </div>
                     </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
+                    
                     <div class="card">
                         <div class="card-image">
                             <i class="far fa-handshake"></i>
@@ -470,10 +439,6 @@
                         </div>
                     </div>
                     
-                    <!-- end of card -->
-
-
-                    <!-- Card -->
                     <div class="card">
                         <div class="card-image">
                             <i class="fas fa-newspaper"></i>
@@ -483,156 +448,18 @@
                             <p>Apprenez comment planifier votre stratégie de marketing digital.
                             Renforcer la formation professionnelle et technique et les dispositifs d'accompagnement à l’insertion.</p>
                         </div>
-                    </div>
-                    <!-- end of card -->
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div> 
 
-                    <!-- Card -->
-                    {{-- <div class="card">
-                        <div class="card-image">
-                            <i class="fas fa-link"></i>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Gathering Backlinks</h4>
-                            <p>Backlinks are vital for SEO and we'll teach you everything there is to know about them</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <i class="fas fa-key"></i>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Keyword Planning</h4>
-                            <p>Find the best relevant keywords that fit your website SEO strategy in the long run</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Evaluate Actions</h4>
-                            <p>Learn how to use the right analytics tools to evaluate your SEO actions and improve them</p>
-                        </div>
-                    </div> --}}
-                    <!-- end of card -->
-                    
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards -->
-    <!-- end of takeaways -->
-
-
-    <!-- Testimonials -->
-    {{-- <div class="slider-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3>Découvrez les témoignages de nos participants et collaborateurs</h3>
-
-                    <!-- Text Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container text-slider">
-                            <div class="swiper-wrapper">
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="image-wrapper">
-                                        <img class="img-fluid" src="images/testimonial-1.jpg" alt="alternative">
-                                    </div> <!-- end of image-wrapper -->
-                                    <div class="text-wrapper">
-                                        <div class="testimonial-text">I took the SEO training course about a year ago and I am very happy. It taught me all the basics of search engine optimization and some tricks.</div>
-                                        <div class="testimonial-author">Jude Thorn - Online Marketer</div>
-                                    </div> <!-- end of text-wrapper -->
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="image-wrapper">
-                                        <img class="img-fluid" src="images/testimonial-2.jpg" alt="alternative">
-                                    </div> <!-- end of image-wrapper -->
-                                    <div class="text-wrapper">
-                                        <div class="testimonial-text">Awesome course for the money. I never thought I could learn so much about search engine optimization in such a short amount of time. Highly recommend.</div>
-                                        <div class="testimonial-author">Roy Smith - Developer</div>
-                                    </div> <!-- end of text-wrapper -->
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="image-wrapper">
-                                        <img class="img-fluid" src="images/testimonial-3.jpg" alt="alternative">
-                                    </div> <!-- end of image-wrapper -->
-                                    <div class="text-wrapper">
-                                        <div class="testimonial-text">Corso is the best SEO training course in the market. It teaches you all the basics but it also adds value with some advanced tips & tricks the are great.</div>
-                                        <div class="testimonial-author">Martin Singer - Online Marketer</div>
-                                    </div> <!-- end of text-wrapper -->
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="image-wrapper">
-                                        <img class="img-fluid" src="images/testimonial-4.jpg" alt="alternative">
-                                    </div> <!-- end of image-wrapper -->
-                                    <div class="text-wrapper">
-                                        <div class="testimonial-text">Learning SEO can actually be fun. I attended Corso SEO training and I had a great time with my peer students and the instructors. Highly recommended course.</div>
-                                        <div class="testimonial-author">Ronda Louis - Business Owner</div>
-                                    </div> <!-- end of text-wrapper -->
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-
-                            </div> <!-- end of swiper-wrapper -->
-                            
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of slider-container -->
-                    <!-- end of text slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-2 --> --}}
-    <!-- end of testimonials -->
-
-
-    {{-- <!-- Date -->
-    <div id="date" class="basic-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-container">
-                        <h2>December 22nd 2020 at Innovation Hub Space</h2>
-                        <p>Our mission is to help people do better SEO. The team is excited to invite you to the next SEO Training Course session which undoubtedly will provide you with the necessary skills to improve your online presence. Fill out the form to register and we'll contact you in less than 24h</p>
-                        <a class="btn-solid-lg page-scroll" href="#register">REGISTER</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-5 -->
-    <!-- end of date --> --}}
-
-
-    <!-- Newsletter -->
     <div class="form-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h3>En vous abonnant à notre liste de diffusion, vous recevrez toujours les dernières nouvelles et mises à jour de notre part.</h3>
                     
-                    <!-- Newsletter Form -->
                     <form id="newsletterForm" data-toggle="validator" data-focus="false">
                         <div class="form-group">
                             <input type="email" class="form-control-input" id="nemail" required>
@@ -650,30 +477,28 @@
                             <div id="nmsgSubmit" class="h3 text-center hidden"></div>
                         </div>
                     </form>
-                    <!-- end of newsletter form -->
-
-                    <!-- Social Links -->
+                    
                     <div class="icon-container">
                         <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://www.facebook.com/profile.php?id=100066730981526" target="_blank">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-facebook-f fa-stack-1x"></i>
                             </a>
                         </span>
                         <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://twitter.com/goldtechafrica2?s=11&t=oJCwbyEKXqWK3dgSsRFrCQ" target="_blank">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-twitter fa-stack-1x"></i>
                             </a>
                         </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
+                        {{-- <span class="fa-stack">
+                            <a href="#your-link" target="_blank">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-pinterest-p fa-stack-1x"></i>
                             </a>
-                        </span>
+                        </span> --}}
                         <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://instagram.com/gold_tech_africa?igshid=YWJhMjlhZTc" target="_blank">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-instagram fa-stack-1x"></i>
                             </a>
@@ -684,14 +509,12 @@
                                 <i class="fab fa-linkedin-in fa-stack-1x"></i>
                             </a>
                         </span>
-                    </div> <!-- end of icon-container -->
-                    <!-- end of social icons -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-2 -->
-    <!-- end of newsletter -->
+                    </div>      
+                </div> 
+            </div>
+        </div> 
+    </div>
+   
 
 
     <!-- Contact -->
@@ -718,11 +541,10 @@
                                 <div class="media-body"><a class="light-gray" href="mailto:contact@goldtechafrica.net">contact@goldtechafrica.net</a> <i class="fas fa-globe"></i><a class="light-gray" href="http://www.goldtechafrica.net">www.goldtechafrica.net</a></div>
                             </li>
                         </ul>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
+                    </div> 
+                </div> 
+                
                 <div class="col-lg-6">
-
-                    <!-- Contact Form -->
                     <form id="contactForm" data-toggle="validator" data-focus="false">
                         <div class="form-group">
                             <input type="text" class="form-control-input" id="cname" required>
@@ -750,16 +572,13 @@
                             <div id="cmsgSubmit" class="h3 text-center hidden"></div>
                         </div>
                     </form>
-                    <!-- end of contact form -->
+                    
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-3 -->
-    <!-- end of contact -->
-
-
-    <!-- Footer -->
+                </div> 
+            </div> 
+        </div>
+    </div>
+   
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -768,7 +587,7 @@
                         <h5>A propos de GoLD Tech</h5>
                         <p class="p-small">Nous sommes passionnés par la gouvernance locale mais également les TICS.</p>
                     </div>
-                </div> <!-- end of col -->
+                </div>
                  
                 <div class="col-md-6">
                     <div class="footer-col third">
@@ -793,22 +612,19 @@
                     <div class="footer-col fourth">
                         <h5>Réseaux sociaux</h5>
                         <p class="p-small">Pour les nouvelles et les mises à jour, suivez-nous</p>
-                        <a href="#your-link">
+                        <a href="https://www.facebook.com/profile.php?id=100066730981526" target="_blank">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#your-link">
+                        <a href="https://twitter.com/goldtechafrica2?s=11&t=oJCwbyEKXqWK3dgSsRFrCQ" target="_blank">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        {{-- <a href="#your-link">
-                            <i class="fab fa-pinterest-p"></i>
-                        </a> --}}
-                        <a href="#your-link">
+                        <a href="https://instagram.com/gold_tech_africa?igshid=YWJhMjlhZTc" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.linkedin.com/company/governance-and-local-development-technology/">
+                        <a href="https://www.linkedin.com/company/governance-and-local-development-technology/" target="_blank">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#your-link">
+                        <a href="https://www.youtube.com/channel/UCnHdLSACxKQjRyZeAcrTRLQ" target="_blank">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div> 
