@@ -44,12 +44,18 @@ Route::get('/categorie/add',[CategoryController::class,'add']);
 
 Route::post('/categorie/add',[CategoryController::class,'store']);
 
+Route::get('/categories/all',[CategoryController::class,'all']);
+
+Route::get('/categorie/delete/{id}',[CategoryController::class,'delete'])->name('categoriedelete');
+
 Route::post('/cours/add',[CourseController::class,'store']);
 
 Route::get('/cours/add',[CourseController::class,'add']);
 
 Route::get('/cours/all',[CourseController::class,'showAll']);
 
+Route::get('/cours/delete/{id}',[CourseController::class,'delete'])->name('coursdelete');
+
 Route::get('/user/all',[UserController::class,'showAll']);
 
-Route::post('/user/delete/{id}',[UserController::class,'destroy']);
+Route::post('/user/delete/{id}',[UserController::class,'delete'])->name('userdelete');

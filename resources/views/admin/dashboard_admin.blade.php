@@ -38,6 +38,12 @@
         </li>
 
         <li class="nav-item">
+            <a class="nav-link collapsed" href="{{ url('/categories/all') }}" >
+                <span>Liste des categories de cours</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
             <a class="nav-link collapsed" href="{{ url('/cours/add') }}" >
                 <span>Ajouter un cours</span>
             </a>

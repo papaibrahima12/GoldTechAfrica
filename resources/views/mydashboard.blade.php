@@ -80,7 +80,7 @@
                     <div class="input-group">
                         <input type="text" id="seachvalue" class="form-control bg-light border-0 small" placeholder="Rechercher un cours..." aria-label="Search" aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                            <button class="btn btn-primary" type="button" id="seach">
+                            <button class="btn btn-warning" type="button" id="seach">
                                 <i class="fas fa-search fa-sm"></i>
                             </button>
                         </div>
@@ -142,24 +142,12 @@
 
             <!-- Begin Page Content -->
             <div class="container-fluid">
-
-                <!-- Page Heading -->
-                {{-- <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">Tableau de bord</h1>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST">
-                       @csrf
-                       <input class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm" type="submit" value="Deconnexion"/>
-                    </form>
-                </div> --}}
-
-                <!-- Content Row -->
                 <div class="row">
                         
                 </div>
 
                 @yield('content')
 
-                <!-- Content Row -->
                 <div class="row">
                     <!-- Content Column -->
                 </div>

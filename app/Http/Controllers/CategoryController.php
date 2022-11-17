@@ -26,14 +26,15 @@ class CategoryController extends Controller
      }
 
      public function showAll(){
-        return view('notif');
+        $categories =  Category::all();
+        return view('category.list',['categories' => $categories]);
      }
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
+     public function all(){
+        $categories =  Category::all();
+        return view('admin.listCategorie',['categories' => $categories]);
+     }
+
     public function store(Request $request)
     {
         $categories = Category::create($request->all());
@@ -80,15 +81,12 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function delete($id)
     {
         $categories = Category::find($id);
          if($categories){
          $categories->delete();
-         return response()->json(["status" => "success"]);
         }
-        else{
-        return response()->json(["status" => "failed"]);
-       }
+        return $this->all();
     }
 }

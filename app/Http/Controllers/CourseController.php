@@ -78,14 +78,12 @@ class CourseController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function delete($id)
     {
         $cours = Cours::find($id);
     if($cours){
         $cours->delete();
-        return response()->json(["status" => "success"]);
-    }else{
-        return response()->json(["status" => "error"]);
     }
+        return $this->showAll();
     }
 }
