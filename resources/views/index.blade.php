@@ -152,10 +152,10 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>S'inscrire en utilisant ce formulaire</h2>
-                        <p>Voulez vous s'inscrire à un cours ?
+                        <h2>Faire une demande d'admission</h2>
+                        <p>Voulez vous vous inscrire à une formation ?
                         C'est facile, il suffit de remplir le formulaire et de cliquer sur soumettre.
-                        Ensuite, vous serez inscrit à l'un de nos cours </p>
+                        Ensuite, nous examinerons votre demande dans les plus brefs délais.</p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-square"></i>
@@ -179,7 +179,7 @@
                         <form id="registrationForm" data-toggle="validator" data-focus="false">
                             <div class="form-group">
                                 <input type="text" class="form-control-input" id="rname" name="rname" required>
-                                <label class="label-control" for="rname">Nom Complet</label>
+                                <label class="label-control" for="rname">Nom et Prenom</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
@@ -190,6 +190,15 @@
                             <div class="form-group">
                                 <input type="text" class="form-control-input" id="rphone" name="rphone" required>
                                 <label class="label-control" for="rphone">Numéro de Téléphone</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control-input" aria-label="Default select example">
+                                    <option selected>Niveau de connaissance du numérique</option>
+                                    <option value="1">Débutant</option>
+                                    <option value="2">Intermédiare</option>
+                                    <option value="3">Avancé</option>
+                                  </select>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group checkbox">
@@ -218,7 +227,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="images/logogoldtech.png" width="550px" alt="alternative">
+                    <img class="img-fluid" src="images/goldtech.png" width="350px" alt="alternative">
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="text-container center">
