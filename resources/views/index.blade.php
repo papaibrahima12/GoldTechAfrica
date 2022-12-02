@@ -97,7 +97,7 @@
                         <div class="countdown"></div>
                         <h1>Gold Tech Africa</h1>
                         <p class="p-large">Gold Tech est une initiative qui fait dans la gouvernance locale et le développement. En associant ces derniers avec la technologie nous obtenons un terrain favorable à un avenir meilleur pour les populations africaines. </p>
-                        <a class="btn-solid-lg page-scroll" href="#register">S'inscrire</a>
+                        <a class="btn-solid-lg page-scroll" href="#register">Demander admission</a>
                         <a class="btn-outline-lg page-scroll" href="#instructor">Vision</a>
                     </div>
                 </div> 
@@ -176,24 +176,24 @@
 
                     <!-- Registration Form -->
                     <div class="form-container">
-                        <form id="registrationForm" data-toggle="validator" data-focus="false">
+                        <form method="get" action="{{ url('/send') }}" data-toggle="validator" data-focus="false" >
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="rname" name="rname" required>
+                                <input type="text" class="form-control-input" id="rname" name="nom" required>
                                 <label class="label-control" for="rname">Nom et Prenom</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control-input" id="remail" name="remail" required>
+                                <input type="email" class="form-control-input" id="remail" name="email" required>
                                 <label class="label-control" for="remail">Adresse Email</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="rphone" name="rphone" required>
+                                <input type="text" class="form-control-input" id="rphone" name="tel" required>
                                 <label class="label-control" for="rphone">Numéro de Téléphone</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <select class="form-control-input" aria-label="Default select example">
+                                <select class="form-control-input" name="niveau" aria-label="Default select example">
                                     <option selected>Niveau de connaissance du numérique</option>
                                     <option value="1">Débutant</option>
                                     <option value="2">Intermédiare</option>
@@ -206,7 +206,7 @@
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">S'inscrire</button>
+                                <button type="submit" class="form-control-submit-button">Soumettre</button>
                             </div>
                             <div class="form-message">
                                 <div id="rmsgSubmit" class="h3 text-center hidden"></div>

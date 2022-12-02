@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DownloadsController;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -59,3 +60,5 @@ Route::get('/cours/delete/{id}',[CourseController::class,'delete'])->name('cours
 Route::get('/user/all',[UserController::class,'showAll']);
 
 Route::post('/user/delete/{id}',[UserController::class,'delete'])->name('userdelete');
+
+Route::get('/send',[MailController::class,'store']);
