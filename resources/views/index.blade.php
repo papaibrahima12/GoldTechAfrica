@@ -97,7 +97,7 @@
                         <div class="countdown"></div>
                         <h1>Gold Tech Africa</h1>
                         <p class="p-large">Gold Tech est une initiative qui fait dans la gouvernance locale et le développement. En associant ces derniers avec la technologie nous obtenons un terrain favorable à un avenir meilleur pour les populations africaines. </p>
-                        <a class="btn-solid-lg page-scroll" href="#register">Demander admission</a>
+                        <a class="btn-solid-lg page-scroll" href="#register">Formation à venir</a>
                         <a class="btn-outline-lg page-scroll" href="#instructor">Vision</a>
                     </div>
                 </div> 

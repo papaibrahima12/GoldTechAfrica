@@ -17,7 +17,7 @@ class MailController extends Controller
             $demandeur->tel = $request->tel;
             $demandeur->niveau = $request->niveau;
             $demandeur->save();
-            Mail::to('papaibrahimasow@esp.sn')->send(new ContactMail($demandeur));
+            Mail::to('contact@goldtechafrica.net')->send(new ContactMail($demandeur));
             dd('email sent successfully');
             return redirect('/');
     }
