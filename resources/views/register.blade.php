@@ -19,7 +19,7 @@
 	<link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 	
 	<!-- Favicon  -->
-    <link rel="icon" href="images/logogoldtech.png">
+    <link rel="icon" href="images/goldtech.png">
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -35,7 +35,7 @@
     
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
 
         <!-- Text Logo - Use this if you don't have a graphic logo -->
         <a class="navbar-brand logo-text page-scroll" href="{{ url('/') }}">Gold Tech Africa</a>
@@ -84,10 +84,6 @@
                             <li class="media">
                                 <i class="fas fa-square"></i>
                                 <div class="media-body"><strong>C'est en sécurité avec nous</strong> et ne sera pas utilisé à des fins de marketing</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><strong>Vous recevrez</strong> un email de confirmation en moins de 24h.</div>
                             </li>
                         </ul>
                     </div> <!-- end of text-container -->

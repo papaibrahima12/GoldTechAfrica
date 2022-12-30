@@ -18,7 +18,7 @@
     <link href="{{ asset('css/swiper.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/magnific-popup.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/styles.css') }}" rel="stylesheet">
-    <link rel="icon" href="images/logogoldtech.png">
+    <link rel="icon" href="images/goldtech.png">
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -164,10 +164,6 @@
                             <li class="media">
                                 <i class="fas fa-square"></i>
                                 <div class="media-body"><strong>C'est en sécurité avec nous</strong> et ne sera pas utilisé à des fins de marketing</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><strong>Vous recevrez</strong> un email de confirmation en moins de 24h.</div>
                             </li>
                         </ul>
                     </div> <!-- end of text-container -->
